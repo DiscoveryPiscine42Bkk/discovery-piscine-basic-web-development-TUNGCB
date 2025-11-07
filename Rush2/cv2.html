@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leo’s Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gradient-bg d-flex flex-column min-vh-100 text-light" style="font-family: 'Inter', sans-serif;">
+
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-dark bg-black shadow-sm fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="navbar-brand fw-semibold text-orange" style="font-family: 'Lora', serif;">← Back</a>
+      <span class="navbar-brand fw-semibold text-orange" style="font-family: 'Lora', serif;">Leo’s Portfolio</span>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="container text-center my-auto fade-slide" style="margin-top: 120px;">
+    <h1 class="mb-3 fw-semibold text-orange" style="font-family: 'Lora', serif;">Welcome to My Portfolio</h1>
+
+    <ul class="nav nav-tabs justify-content-center mb-4" id="leoTabs">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#about">About</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#projects">Showcase</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#contact">Contact</button></li>
+    </ul>
+
+    <div class="tab-content slide-transition">
+      <div class="tab-pane fade show active" id="about">
+        <img src="Leo.jpg.png" class="profile-img mb-3" alt="Leo Profile">
+        <p class="text-light">Hey! I’m Leo — a creative frontend developer who loves crafting smooth UI experiences and modern designs.</p>
+      </div>
+      <div class="tab-pane fade" id="projects">
+        <p class="text-light">My top projects include:</p>
+        <ul class="list-unstyled text-light">
+          <li>• Interactive Resume Portal 🌐</li>
+          <li>• Portfolio Showcase with Animation ✨</li>
+          <li>• WebGL Motion Playground 🌀</li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="contact">
+  <h4 class="text-light">Contact Me</h4>
+  <div class="d-flex justify-content-center gap-4">
+    <a href="https://www.instagram.com/leozundo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+       target="_blank" class="text-light fs-3 icon-hover">
+      <i class="bi bi-instagram"></i>
+    </a>
+    <a href="https://line.me/ti/p/7u-vO5X_ST" 
+       target="_blank" class="text-light fs-3 icon-hover">
+      <i class="bi bi-line"></i>
+    </a>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-auto py-3 text-center text-light bg-black" style="font-family: 'Inter', sans-serif;">
+    © 2025 Leo | 42 Bangkok
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

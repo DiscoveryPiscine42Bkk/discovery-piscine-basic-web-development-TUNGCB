@@ -1,0 +1,170 @@
+/* Color theme */
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.text-orange {
+  color: #ff4d00 !important;
+}
+
+/* Gradient background (dark flowing effect) */
+.gradient-bg {
+  background: radial-gradient(circle at top left, #111, #000);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Fade animation */
+.fade-slide {
+  animation: fadeSlide 1s ease;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Profile image style */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(255, 77, 0, 0.5);
+  transition: transform 0.4s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Orange button */
+.btn-orange {
+  background-color: #ff4d00;
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.btn-orange:hover {
+  background-color: #ff4d00;
+  transform: scale(1.05);
+}
+
+/* Outline button */
+.btn-outline-orange {
+  color: #ff4d00;
+  border: 2px solid #ff4d00;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.btn-outline-orange:hover {
+  background-color: #ff4d00;
+  color: #fff;
+}
+
+/* Navbar + footer */
+.navbar {
+  background-color: #000 !important;
+}
+footer {
+  font-size: 0.9rem;
+  background-color: #000 !important;
+  color: #fff;
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+  color: #ff4d00;
+  border: none;
+  background: transparent;
+  transition: 0.3s;
+}
+.nav-tabs .nav-link.active {
+  background-color: #ff4d00;
+  color: #fff !important;
+  border-radius: 6px;
+}
+
+/* Tab slide transition */
+.slide-transition .tab-pane {
+  transition: all 0.6s ease;
+  transform: translateY(10px);
+}
+.slide-transition .tab-pane.show.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* ====== NAVBAR & TAB HOVER EFFECTS ====== */
+
+/* Navbar brand / links hover */
+.navbar a.navbar-brand,
+.navbar .nav-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a.navbar-brand:hover,
+.navbar .nav-link:hover {
+  color: #ff4d00 !important; /* bright orange highlight */
+  transform: scale(1.05);
+}
+
+/* Nav-tabs hover animation */
+.nav-tabs .nav-link {
+  color: #ddd;
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #ff4d00;
+  transform: translateY(-2px);
+}
+
+.nav-tabs .nav-link.active {
+  color: #ff4d00;
+  border-bottom: 2px solid #ff4d00;
+  font-weight: 600;
+}
+
+/* Button hover glow */
+.btn, .btn-outline-primary {
+  transition: all 0.3s ease;
+}
+
+.btn:hover, .btn-outline-primary:hover {
+  box-shadow: 0 0 10px rgba(255, 140, 66, 0.6);
+  transform: translateY(-2px);
+}
+/* ====== SMOOTH SCROLL & TAB FADE ====== */
+
+/* Smooth scroll for all anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade + slide effect for tab transitions */
+.tab-pane {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.6s ease;
+}
+
+.tab-pane.active.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional subtle glow on tab switch */
+.nav-tabs .nav-link.active {
+  box-shadow: 0 2px 8px rgba(255, 77, 0, 0.3);
+}
+/* Social icon hover effects */
+.icon-hover {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-hover:hover {
+  color: #ff4d00;
+  transform: scale(1.2);
+}
